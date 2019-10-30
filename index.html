@@ -1,27 +1,7 @@
-<?php
 
-if($_POST["submit"]) {
-    $recipient="kristian.claire.101@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
 
 <!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Kristian Claire</title>
