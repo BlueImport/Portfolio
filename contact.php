@@ -33,19 +33,19 @@ if($_POST["submit"]) {
 <form method="post" action="contact.php">
 											<div class="fields">
 												<div class="field half">
-													<label for="name">Name</label>
+													<label for="the_name">Name</label>
 													<input type="text" name="sender" id="name" />
 												</div>
 												<div class="field half">
-													<label for="email">Email</label>
+													<label for="the_email">Email</label>
 													<input type="email" name="senderEmail" id="email" />
 												</div>
 												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4"></textarea>
+													<label for="the_message">Message</label>
+													<textarea name="the_text_message" id="message" rows="4"></textarea>
 												</div>
 											</div>
 											<ul class="actions">
-												<li><input type="submit" name="submit" value="Send Message" class="button primary" /></li>
+												<li><input type="submit" name="the_submit" value="Send Message" class="button primary" /></li>
 											</ul>
 										</form>
