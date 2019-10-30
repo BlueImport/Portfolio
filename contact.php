@@ -1,51 +1,38 @@
 <?php
 
-if($_POST["submit"]) {
+if(!isset($_POST["submit"])) 
+{
+echo "error; you need to submit the form!";
+}
     $recipient="kristian.claire.101@gmail.com";
     $subject="Form to email message";
     $sender=$_POST["sender"];
     $senderEmail=$_POST["senderEmail"];
     $message=$_POST["message"];
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+    //validate
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+if(empty($sender) || empty($senderEmail))
+{
+    echo "Please make sure you have entered your name and email address!";
+    exit;
 }
+
+$email_from = "kristian.claire.101@gmail.com";
+$email_subject = "New Form Submission";
+$email_body = "You have received a new message from the user $sender.\n".
+"email address: $senderEmail\n".   
+"Here is the message:\n $message".   
+
+$to = "kristian.claire.101@gmail.com";
+$headers = "From: $email_from \r\n";
+
+//send the mail
+
+mail($to,$email_subject,$email_body,$headers);
+
+  
 
 ?>
 
 
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		<title>Kristian Claire</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-
-
-
-<form method="post" action="https://kristian-claire.netlify.com/contact.php">
-											<div class="fields">
-												<div class="field half">
-													<label for="the_name">Name</label>
-													<input type="text" name="sender" id="name" />
-												</div>
-												<div class="field half">
-													<label for="the_email">Email</label>
-													<input type="email" name="senderEmail" id="email" />
-												</div>
-												<div class="field">
-													<label for="the_message">Message</label>
-													<textarea name="the_text_message" id="message" rows="4"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" name="the_submit" value="Send Message" class="button primary" /></li>
-											</ul>
-										</form>
