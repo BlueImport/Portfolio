@@ -30,7 +30,7 @@ if($_POST["submit"]) {
 
 
 
-<form method="post" action="contact.php">
+<form method="post" action="https://kristian-claire.netlify.com/contact.php">
 											<div class="fields">
 												<div class="field half">
 													<label for="the_name">Name</label>
