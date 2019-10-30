@@ -1,38 +1,25 @@
+
 <?php
 
-if(!isset($_POST["submit"])) 
-{
-echo "error; you need to submit the form!";
-}
-    $recipient="kristian.claire.101@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
+  $name = $_POST['name'];
 
-    //validate
+  $visitor_email = $_POST['email'];
 
-if(empty($sender) || empty($senderEmail))
-{
-    echo "Please make sure you have entered your name and email address!";
-    exit;
-}
+  $message = $_POST['message'];
 
-$email_from = "kristian.claire.101@gmail.com";
-$email_subject = "New Form Submission";
-$email_body = "You have received a new message from the user $sender.\n".
-"email address: $senderEmail\n".   
-"Here is the message:\n $message".   
+    $email_from = 'kristian.claire.101@gmail.com';
 
-$to = "kristian.claire.101@gmail.com";
-$headers = "From: $email_from \r\n";
+ 
 
-//send the mail
+    $email_subject = "New Form submission";
 
-mail($to,$email_subject,$email_body,$headers);
+ 
 
-  
+    $email_body = "You have received a new message from the user $name.\n".
+
+                            "Here is the message:\n $message".
 
 ?>
+
 
 
