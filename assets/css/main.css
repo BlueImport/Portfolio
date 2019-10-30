@@ -311,7 +311,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffe4b4;
+			color: #7e7d7b;
 		}
 
 	strong, b {
@@ -325,6 +325,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 1.5rem 0;
+		color: black;
 	}
 
 		body.is-ie p {
@@ -332,7 +333,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: rgba(255, 255, 255, 0.875);
+		color: black;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 700;
 		line-height: 1.3;
@@ -384,6 +385,13 @@ input, select, textarea {
 				bottom: -1.2rem;
 			}
 
+		h2.code {
+			color: white;
+		}
+		
+		p.code{
+			color: white;
+		}
 	h3 {
 		font-size: 1.325rem;
 	}
@@ -1220,6 +1228,7 @@ input, select, textarea {
 				height: 6rem;
 				line-height: 6rem;
 				border-radius: 6rem;
+				color: black;
 				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 				font-size: 2.5rem;
 				margin: 0 auto;
@@ -1402,7 +1411,7 @@ input, select, textarea {
 		}
 
 		ul.contact-icons.color3 > li:before {
-			color: #ffe4b4;
+			color: #706f6e;
 		}
 
 		ul.contact-icons.color4 > li:before {
@@ -1517,8 +1526,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #ffe4b4;
-			color: #ffe4b4 !important;
+			box-shadow: inset 0 0 0 2px #706f6e;
+			color: white !important;
 		}
 
 		input[type="submit"]:active,
@@ -1640,7 +1649,7 @@ input, select, textarea {
 			input[type="button"].primary.color1,
 			button.primary.color1,
 			.button.primary.color1 {
-				color: #726193 !important;
+				color: #726193;
 			}
 
 			input[type="submit"].primary.color2,
@@ -1656,7 +1665,7 @@ input, select, textarea {
 			input[type="button"].primary.color3,
 			button.primary.color3,
 			.button.primary.color3 {
-				color: #ffe4b4 !important;
+				color: #706f6e !important;
 			}
 
 			input[type="submit"].primary.color4,
@@ -1672,7 +1681,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffe4b4;
+				background-color: rgb(153, 206, 228);
 			}
 
 			input[type="submit"].primary:active,
@@ -1680,7 +1689,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #fdd997;
+				background-color: #706f6e;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2195,19 +2204,20 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
-				background-size: 128px 128px, auto;
+				background-image: url("../../images/1bird.jpg"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-size: cover;
 			}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-image: url("../../images/skillz.jpg"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
 				background-color: #726193;
+				background-size: cover;
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-				background-size: 128px 128px, auto;
+				background-image: url("../../images/code.jpg"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-size: cover;
 				background-color: #e37b7c;
 			}
 
@@ -2224,9 +2234,10 @@ input, select, textarea {
 			}
 
 			.panel > *.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-image: url("../../images/skillz.jpg"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
+				
+				background-size: cover;
 			}
 
 			.panel > *.color2-alt {
@@ -2717,9 +2728,11 @@ input, select, textarea {
 		}
 
 		.panel.color1 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-image: url("../../images/skillz.jpg"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			
+			
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
 		.panel.color2 {
@@ -2799,9 +2812,9 @@ input, select, textarea {
 			}
 
 			.panel > *.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
+				background-image: url("../../images/skillz.jpg"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-size: cover;
+			
 			}
 
 			.panel > *.color2-alt {
@@ -3202,8 +3215,8 @@ input, select, textarea {
 				}
 
 			.panel.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-				background-size: 128px 128px, auto;
+				background-image: url("../../images/skillz.jpg"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-size: cover;
 				background-color: #726193;
 			}
 
@@ -3226,7 +3239,7 @@ input, select, textarea {
 			}
 
 			.panel.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-image: url("../../images/skillz.jpg"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
 				background-color: #6c5e86;
 			}
